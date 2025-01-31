@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: aquamarine;
+            padding: 20px;
+            /* height:400px; we use min height so in case we increase anything else it will adjust accordingly*/
+            min-height: 400px;
+            border:4px darkolivegreen;
+            display:flex;
+            justify-content:center;/* this aligns the content horizontally flex-start,center,flex-end,*/
+            /* space between is used to make items|space around gives same space on the right and left items|space-evenly gives even spaces in between items */
+            align-items: center;/* this aligns cotents in vertical arrangements flex-start,center,flex-end */
+            flex-direction: row;/* it arranges in row or coloumn,row-reverse  */
+            flex-wrap: wrap;
+            /* flex-wrap it will adjust items according to the width */
+            column-gap: 10px;/*it will provide gaps to the columns*/
+            row-gap: 20px;
+            
+        }
+        .item{
+            background-color: plum;
+            width: 100px;
+            height: 100px;
+            border:2px solid purple;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            /* if flex-wrap is off then flex-shrink shoulld be set to 0 as it is already set to 1 by default for shrinking */
+            flex-shrink: 1;
+            flex-grow: 1;
+            
+            
+           
+
+            
+        }
+        #i1{
+            flex-grow: 5;
+            flex-grow: 4;
+            /* it will adjust more comparing than other items */
+            align-self: flex-start;
+            /* it will align the item according to the order */
+            margin-right:auto;
+
+        }
+        @media(max-width:300px){
+            .container{
+                flex-wrap: wrap;
+                background-color: brown;
+            }
+            /* acts while it will hit less than 300px */
+        }
+    </style>
+</head>
+<body>
+    <!-- flex adjusts according to the screen size -->
+     <div class="container">
+        <div class="item" id="i1">Item1</div>
+     <div class="item">Item2</div>
+     <div class="item">Item3</div>
+     <div class="item">Item4</div>
+     <div class="item">Item5</div>
+     <div class="item">Item6</div>
+     <div class="item">Item7</div>
+     </div>
+     <!-- 3 dots terminal new terminal
+      git status to check if its a git repo or not
+      git init->initialize it 
+      commit means saving
+      staging area:needs to be addeed before commiting the file
+       -->
+</body>
+</html>

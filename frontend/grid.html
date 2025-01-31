@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: beige;
+            border: 10px salmon;
+            padding: 40px;
+            display:grid;
+            
+            grid-template-columns: auto auto auto;
+            grid-template-columns: 20% auto 50%;
+            /* if two percentages are added then it will a */
+            grid-template-rows: 150px 100px 80px;
+            grid-row-gap: 20px;
+            
+
+
+        }
+        .item{
+            border: 3px maroon solid;
+            padding: 20px;
+            background-color: chocolate;
+
+            
+
+        }
+         /* #i3{
+             grid-row-start:3;
+            grid-row-end:span 2; */
+
+
+        #i7{
+            grid-column-start: 2;
+            grid-column-end: span 1;
+          
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item1</div>
+        <div class="item">Item2</div>
+        <div class="item" id="i3">Item3</div>
+        <div class="item">Item4</div>
+        <div class="item">Item5</div>
+        <div class="item">Item6</div>
+        <div class="item" id="i7">Item7</div>
+        <div class="item">Item8</div>
+        <div class="item">Item9</div>
+        
+    </div>
+
+</body>
+</html>
